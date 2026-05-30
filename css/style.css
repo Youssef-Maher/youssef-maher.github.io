@@ -1,0 +1,272 @@
+/* 1. إعدادات عامة والخطوط */
+body {
+  font-family: "Cairo", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+}
+.row {
+  --bs-gutter-x: 1.5rem; /* تقليل الفجوة التلقائية على الشاشات الصغرى لمنع التمدد */
+  margin-right: 0;
+  margin-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.fw-black {
+  font-family: "Cairo", sans-serif;
+  font-weight: 900;
+}
+.btn:hover {
+  color: inherit;
+  background-color: inherit;
+}
+/* 2. متغيرات الألوان وثوابت التصميم المودرن */
+:root {
+  --dark-blue: #0f172a;
+  --primary-blue: #2563eb;
+  --emerald: #10b981;
+  --secondary-dark: #475569;
+}
+
+.text-dark-blue {
+  color: var(--dark-blue);
+}
+.text-primary-blue {
+  color: var(--primary-blue);
+}
+.text-emerald {
+  color: var(--emerald);
+}
+.text-secondary-dark {
+  color: var(--secondary-dark);
+}
+image {
+  object-fit: cover;
+  object-position: top;
+}
+
+/* 3. تنسيقات قائمة التنقل */
+.custom-navbar {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(10px);
+}
+.hover-blue:hover {
+  color: var(--primary-blue) !important;
+}
+.btn-emerald {
+  background-color: var(--emerald);
+  color: white;
+  transition: all 0.3s ease;
+}
+.btn-emerald:hover {
+  background-color: #059669;
+  color: var(--dark-blue);
+  transform: translateY(-2px);
+}
+
+/* 4. تنسيقات القسم الرئيسي (Hero) */
+.hero-section {
+  background: linear-gradient(to bottom, rgba(37, 99, 235, 0.04), transparent);
+  min-height: 75vh;
+}
+.bg-light-blue {
+  background-color: rgba(37, 99, 235, 0.1);
+}
+.btn-primary-blue {
+  background-color: var(--primary-blue);
+  color: white;
+}
+.btn-primary-blue:hover {
+  background-color: #1d4ed8;
+  color: white;
+}
+.lg-btn {
+  min-width: 180px;
+}
+.hero-section .services {
+  border: 1px solid var(--dark-blue);
+}
+.hero-section .services:hover {
+  color: var(--primary-blue);
+  border: 1px solid var(--primary-blue);
+}
+
+/* 5. أيقونات التواصل المهني في الهيرو */
+.social-hero-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--secondary-dark);
+  font-size: 1.15rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+.social-hero-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.social-hero-icon.linkedin:hover {
+  background-color: #0077b5;
+  border-color: #0077b5;
+}
+.social-hero-icon.github:hover {
+  background-color: #24292e;
+  border-color: #24292e;
+}
+.social-hero-icon.upwork:hover {
+  background-color: #14a800;
+  border-color: #14a800;
+}
+
+/* 6. نافذة محاكاة الكود التوضيحية */
+.code-window {
+  background-color: #1e293b;
+  border-color: #334155 !important;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.text-blue-light {
+  color: #38bdf8;
+}
+.text-purple {
+  color: #c084fc;
+}
+.text-yellow {
+  color: #fde047;
+}
+.text-green {
+  color: #4ade80;
+}
+.text-orange {
+  color: #fb923c;
+}
+
+/* 7. بطاقات الخدمات والمعرض */
+.bg-light-gray {
+  background-color: #f8fafc;
+}
+.icon-box {
+  width: 48px;
+  height: 48px;
+}
+.custom-card {
+  transition: all 0.3s ease;
+}
+.custom-card:hover {
+  background-color: white !important;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.08) !important;
+  transform: translateY(-5px);
+}
+.card-gradient-bg {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #9cbaff 100%);
+}
+.custom-portfolio-card {
+  transition: all 0.3s ease;
+}
+.custom-portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12) !important;
+}
+.card-text-sm {
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+.badge-icon {
+  width: 28px;
+  height: 28px;
+}
+/*projects*/
+.card .view a {
+  background-color: var(--dark-blue);
+  color: white;
+  margin-top: 20px;
+}
+.card .view a:hover {
+  background-color: var(--primary-blue);
+  color: white;
+  margin-top: 20px;
+}
+/* 8. الفوتر */
+.bg-dark-blue {
+  background-color: #020617 !important;
+}
+.hover-white:hover {
+  color: white !important;
+}
+
+/* انيميشن تصفية المشاريع */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   11. تنسيقات صفحة شركاء النجاح المنفصلة (Clients Page)
+   ========================================================================== */
+
+.client-detailed-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.client-logo-wrapper {
+  transition: background-color 0.3s ease;
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-page-logo {
+  max-height: 40px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+/* التفاعل الفاخر عند تمرير الماوس */
+.client-detailed-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08) !important;
+  border-color: rgba(
+    37,
+    99,
+    235,
+    0.2
+  ) !important; /* لون الإطار يميل للأزرق خفيفاً */
+}
+
+.client-detailed-card:hover .client-page-logo {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.client-detailed-card:hover .client-logo-wrapper {
+  background-color: #ffffff !important;
+}
+
+/* نصوص مساعدة صغيرة الحجم */
+.text-xs {
+  font-size: 0.8rem !important;
+}

@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>معرض الأعمال | مطور واجهات ووردبريس احترافي</title>
+
+    <!-- Bootstrap 5 RTL -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="bg-light">
+    <!-- قائمة التنقل (Navbar) -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top bg-white border-bottom custom-navbar"
+    >
+      <div class="container py-2">
+        <a class="navbar-brand fw-black text-dark-blue fs-3" href="index.html">
+          يُوسُف<span class="text-emerald">.</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium gap-3">
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-dark hover-blue"
+                href="index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-dark hover-blue"
+                href="index.html#services"
+                >الخدمات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-primary-blue fw-bold"
+                href="portfolio.html"
+                >معرض الأعمال</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-dark hover-blue"
+                href="index.html#why-me"
+                >لماذا أنا؟</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a
+              href="https://wa.me/201000000000"
+              target="_blank"
+              class="btn btn-emerald rounded-pill px-4 py-2 fw-bold shadow-sm d-flex align-items-center gap-2"
+            >
+              <span>تواصل واتساب</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- الهيدر الرئيسي لصفحة المشاريع -->
+    <header class="py-5 bg-white border-bottom">
+      <div class="container text-center py-4">
+        <span
+          class="badge bg-light-blue text-dark-blue px-3 py-2 rounded-pill fw-semibold mb-2"
+        >
+          تصفح
+        </span>
+        <h1 class="fw-black text-dark-blue display-5 mb-3">معرض الأعمال</h1>
+        <p
+          class="text-muted max-w-3xl mx-auto fs-5"
+          style="max-width: 750px"
+        ></p>
+      </div>
+    </header>
+
+    <!-- قسم عرض المشاريع مع الفلترة -->
+    <section class="py-5">
+      <div class="container py-3">
+        <!-- أزرار تصفية المشاريع (Filters) -->
+        <!-- <div
+          class="d-flex flex-wrap justify-content-center gap-2 mb-5"
+          id="portfolio-flters"
+        >
+          <button
+            class="btn btn-primary-blue rounded-pill px-4 filter-btn active"
+            data-filter="all"
+          >
+            كل المشاريع
+          </button>
+          <button
+            class="btn btn-outline-secondary rounded-pill px-4 filter-btn"
+            data-filter="wp"
+          >
+            ووردبريس مخصص
+          </button>
+          <button
+            class="btn btn-outline-secondary rounded-pill px-4 filter-btn"
+            data-filter="frontend"
+          >
+            تطوير واجهات (Vue/JS)
+          </button>
+        </div> -->
+
+        <!-- شبكة عرض المشاريع بعد الإصلاح الهيكلي -->
+        <div class="row g-4" id="portfolio-wrapper">
+          <!-- مشروع 1 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/hadwah.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">مجالس حظوة</h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://hadwah.com/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- مشروع 2 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/nadiim.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">منصة نديم</h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://nadiim.com/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- مشروع 3 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/midad.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">شركة مداد</h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://midad.om/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- مشروع 4 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/almohassel.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">المحصل</h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://almohassel.org/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/mershad.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">مركز مرشاد</h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://mershad.org/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/alshehri89.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">
+                    مدونة د. عبدالله الشهري
+                  </h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://aboanas89.com/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/abdullahsalah.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">
+                    مدونة د. عبدالله بن صلاح الشهري
+                  </h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://abdullahsalah.com/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/saad992.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">
+                    مدونة د. سعد الشمري
+                  </h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://saad992.com/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- يمكنك إضافة كتل مشاريع أخرى هنا بنفس الهيكل الفوقي مع تغيير data-category -->
+        </div>
+      </div>
+    </section>
+    <!-- 6. الفوتر (Footer) -->
+    <footer
+      class="bg-dark-blue text-secondary-dark py-5 border-top border-secondary"
+    >
+      <div
+        class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-4 text-center text-sm-start"
+      >
+        <div class="text-white fw-bold fs-4">
+          يُوسُف<span class="text-emerald">.</span>
+        </div>
+        <p class="text-xs text-white m-0">
+          &copy; جميع الحقوق محفوظة - يوسف ماهر .
+        </p>
+        <div class="d-flex gap-4 fs-6 justify-content-center">
+          <a
+            href="mailto:yousefmaher.dev@gmail.com"
+            target="_blank"
+            class="text-secondary-dark text-decoration-none hover-white"
+            >Yousefmaher.dev@gmail.com</a
+          >
+          <a
+            href="https://eg.linkedin.com/in/yousef-maher-81771b191"
+            target="_blank"
+            class="text-secondary-dark text-decoration-none hover-white"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+    <!-- استدعاء ملفات جافاسكريبت المساعدة لـ Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

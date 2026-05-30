@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>يوسف ماهر</title>
+
+    <!-- Bootstrap 5 CSS (RTL ليدعم اللغة العربية تلقائياً) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ملف الـ CSS الخاص بنا -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 1. قائمة التنقل (Navbar) -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top bg-white border-bottom custom-navbar"
+    >
+      <div class="container py-2">
+        <a class="navbar-brand fw-black text-dark-blue fs-3" href="index.html"
+          >يُوسُف<span class="text-emerald">.</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-primary-blue fw-bold" href="index.html"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-dark hover-blue"
+                href="#services"
+                >الخدمات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-dark hover-blue"
+                href="portfolio.html"
+                >معرض الأعمال</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary-dark hover-blue" href="#why-me"
+                >لماذا أنا؟</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a
+              href="https://wa.me/201117852122"
+              target="_blank"
+              class="btn btn-emerald rounded-pill px-4 py-2 fw-bold shadow-sm d-flex align-items-center gap-2"
+            >
+              <span>تواصل واتساب</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. القسم الرئيسي (Hero Section) -->
+    <section id="hero" class="hero-section py-5 d-flex align-items-center">
+      <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <span
+              class="badge bg-light-blue text-dark-blue px-3 py-2 rounded-pill fw-semibold mb-3"
+            >
+              <span
+                class="spinner-grow spinner-grow-sm text-primary me-1"
+                role="status"
+              ></span>
+              اغتنم عروض عيد الأضحى بتخفيض يصل إلى 20%
+            </span>
+            <h1 class="fw-black text-dark-blue lh-base">
+              أنشئ منصتك الرقمية لتعكس حجم
+              <span class="text-primary-blue">أعمالك</span>
+              وتكسب ثقة عملائك.
+            </h1>
+            <p class="text-dark mb-4 lh-base fw-medium">
+              مطور فرونت إند متخصص في بناء مواقع الشركات والمحافظ والمدونات
+              الاحترافية باستخدام ووردبريس كمنصة إدارة بيانات مرنة، مع واجهات
+              تفاعلية سريعة تضمن لك أعلى معايير تجربة المستخدم وتصدر الـ SEO.
+            </p>
+
+            <!-- أيقونات التواصل المهني -->
+            <div
+              class="d-flex align-items-center justify-content-center justify-content-lg-start gap-3 mb-4"
+            >
+              <a
+                href="https://eg.linkedin.com/in/yousef-maher-81771b191"
+                target="_blank"
+                class="social-hero-icon linkedin"
+                title="LinkedIn"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://www.upwork.com/freelancers/~015558a5a6f1835772"
+                target="_blank"
+                class="social-hero-icon upwork"
+                title="Upwork"
+              >
+                <svg
+                  viewBox="0 0 448 512"
+                  fill="currentColor"
+                  width="18"
+                  height="18"
+                >
+                  <path
+                    d="M56 32l336 0c30.9 0 56 25.1 56 56l0 336c0 30.9-25.1 56-56 56L56 480c-30.9 0-56-25.1-56-56L0 88C0 57.1 25.1 32 56 32zM270.9 274.2c6.6-52.9 25.9-69.5 51.4-69.5 25.3 0 44.9 20.2 44.9 49.7s-19.7 49.7-44.9 49.7c-27.9 0-46.3-21.5-51.4-29.9zm-26.7-41.8c-8.2-15.5-14.3-36.3-19.2-55.6l-62.9 0 0 78.1c0 28.4-12.9 49.4-38.2 49.4S84.1 283.4 84.1 255l.3-78.1-36.2 0 0 78.1c0 22.8 7.4 43.5 20.9 58.2 13.9 15.2 32.8 23.2 54.8 23.2 43.7 0 74.2-33.5 74.2-81.5l0-52.5c4.6 17.3 15.4 50.5 36.2 79.7l-19.3 110.5 36.8 0 12.8-78.4c4.2 3.5 8.7 6.6 13.4 9.4 12.3 7.8 26.4 12.2 40.9 12.6l3.4 0c45.1 0 80.9-34.9 80.9-81.9s-35.9-82.2-80.9-82.2c-45.4 0-70.9 29.7-78.1 60.1l0 .2z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://github.com/Youssef-Maher"
+                target="_blank"
+                class="social-hero-icon github"
+                title="GitHub"
+              >
+                <i class="bi bi-github"></i>
+              </a>
+              <a
+                href="mailto:yousefmaher.dev@gmail.com"
+                class="social-hero-icon envelope"
+                title="تواصل عبر البريد الإلكتروني"
+              >
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3"
+            >
+              <a
+                href="portfolio.html"
+                class="btn btn-primary-blue lg-btn px-4 py-3 rounded-3 fw-bold shadow"
+                >تصفح معرض الأعمال</a
+              >
+              <a
+                href="#services"
+                class="services btn text-dark-blue lg-btn px-4 py-3 rounded-3 fw-bold bg-white"
+                >اكتشف الخدمات</a
+              >
+            </div>
+          </div>
+
+          <!-- الجانب البصري للمطور -->
+          <div class="col-lg-5 d-flex justify-content-center">
+            <div
+              class="code-window w-100 p-4 rounded-4 shadow-lg border text-start"
+              style="direction: ltr; max-width: 440px"
+            >
+              <div class="d-flex gap-2 mb-3">
+                <span class="dot bg-danger"></span>
+                <span class="dot bg-warning"></span>
+                <span class="dot bg-success"></span>
+              </div>
+              <pre class="m-0 font-monospace text-blue-light fs-6">
+                <code><span class="text-purple">const</span> <span class="text-yellow">developer</span> = {
+  name: <span class="text-green">"Yousef Maher"</span>,
+  email: <span class="text-green">"yousefmaher.dev@gmail.com"</span>,
+  country: <span class="text-green">"Egypt"</span>,
+  optimized: <span class="text-orange">true</span>
+};
+</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. قسم الخدمات (Services) -->
+    <section id="services" class="py-5 bg-white border-top border-bottom">
+      <div class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 700px">
+          <h2 class="fw-black text-dark-blue mb-2 fs-1">الخدمات</h2>
+          <p class="text-muted fs-5">
+            حلول برمجية متكاملة مصممة خصيصاً لتناسب متطلبات الشركات والمواقع
+            التجارية الكبرى.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-- خدمة 1 -->
+          <div class="col-md-6">
+            <div class="card h-100 border-0 p-4 bg-light-gray custom-card">
+              <div
+                class="icon-box bg-blue-subtle text-primary-blue rounded-3 mb-4 d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  class="bi"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="h4 fw-bold text-dark-blue mb-2">
+                تطوير مدونات ووردبريس
+              </h3>
+              <p class="text-muted card-text-sm lh-lg m-0">
+                ندمج بين جمال التصميم وبساطة الواجهات لمنح القارئ تجربة تصفح
+                مريحة وممتعةمع توفير تنقلاً سلساً بين الأقسام والمقالات، مع لوحة
+                تحكم مرنة تمنحك مرونة كاملة في إدارة ونشر المحتوى بكل سهولة.
+              </p>
+            </div>
+          </div>
+          <!-- خدمة 2 -->
+          <div class="col-md-6">
+            <div class="card h-100 border-0 p-4 bg-light-gray custom-card">
+              <div
+                class="icon-box bg-emerald-subtle text-emerald rounded-3 mb-4 d-flex align-items-center justify-content-center"
+              >
+                <svg
+                  class="bi"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9h18"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="h4 fw-bold text-dark-blue mb-2">
+                منصات الشركات وصفحات الهبوط الاحترافية
+              </h3>
+              <p class="text-muted card-text-sm lh-lg m-0">
+                نساعد المنشآت والمشاريع الواعدة في صياغة هويتها الرقمية من خلال
+                صفحات هبوط ومواقع تعريفية تجمع بين بساطة الأداء وجمال التصميم.
+                نوفر لك تجربة مستخدم سلسة تبرز خدماتك بشكل موثوق، وتساهم في
+                تحويل الزوار إلى عملاء دائمين بأعلى معايير الاحترافية.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. جزء مبسط لمعرض الأعمال (Portfolio) -->
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container py-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 700px">
+          <h2 class="fw-black text-dark-blue mb-2 fs-1">معرض الأعمال</h2>
+          <p class="text-muted fs-5">
+            نماذج متميزة تجمع بين الهوية العصرية والأكواد النظيفة فائدة الأداء.
+          </p>
+        </div>
+        <div class="row g-4">
+          <!-- مشروع 1 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/hadwah.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">مجالس حظوة</h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://hadwah.com/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- مشروع 2 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/nadiim.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">منصة نديم</h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://nadiim.com/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- مشروع 3 -->
+          <div class="col-md-4">
+            <div
+              class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden custom-portfolio-card"
+            >
+              <div
+                class="card-gradient-bg h-48 d-flex align-items-center justify-content-center text-white p-4"
+              >
+                <img
+                  src="img/projects/midad.webp"
+                  alt=""
+                  width="100%"
+                  height="200px"
+                />
+              </div>
+              <div
+                class="card-body d-flex flex-column justify-content-between p-4"
+              >
+                <div>
+                  <h3 class="h5 fw-bold text-dark-blue mb-2">شركة مداد</h3>
+                  <p class="text-muted card-text-sm mb-4"></p>
+                </div>
+                <div class="d-flex gap-2">
+                  <span class="badge bg-light text-secondary border"
+                    >WordPress</span
+                  >
+                </div>
+                <div class="view">
+                  <a
+                    href="https://midad.om/"
+                    target="_blank"
+                    class="btn btn-view-project rounded-pill px-4 py-2 fw-bold d-inline-flex align-items-center gap-2"
+                  >
+                    <span>زيارة الموقع</span>
+                    <i class="bi bi-arrow-up-left-circle-fill"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a
+            href="portfolio.html"
+            class="btn btn-outline-primary px-5 py-3 rounded-pill fw-bold"
+          >
+            جميع المشاريع</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. قسم مميزات الخدمة والضمان (Why Me) -->
+    <section id="why-me" class="py-5 bg-white">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <h2 class="fw-black text-dark-blue mb-3 fs-2 lh-base">
+              معايير ثابتة ألتزم بها لضمان أعلى مستويات الجودة والأداء
+            </h2>
+            <p class="text-muted fs-5 mb-4 lh-lg">
+              السوق العربي يبحث عن الالتزام الدقيق بالجودة والمواعيد، لذلك لا
+              أقوم بمجرد تركيب قوالب عشوائية، بل أصنع كوداً احترافياً يعبر عن
+              عملك بالشكل الأمثل.
+            </p>
+            <!-- item -->
+            <div class="d-flex gap-3 mb-4">
+              <div
+                class="badge-icon bg-blue-subtle text-primary-blue rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center fw-bold"
+              >
+                ✓
+              </div>
+              <div>
+                <h4 class="fw-bold text-dark-blue mb-1 fs-5">دعم فني مستمر</h4>
+                <p class="text-muted card-text-sm m-0">
+                  إدارة موقعك لن تكون عائقاً بعد الآن؛ عند تسليم المشروع، سأقدم
+                  لك تسجيلاً مرئياً مخصصاً يشرح لك كيفية إدارة المحتوى والتحكم
+                  في كافة إعدادات موقعك بدون أي تعقيد تقني.
+                </p>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="d-flex gap-3 mb-4">
+              <div
+                class="badge-icon bg-blue-subtle text-primary-blue rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center fw-bold"
+              >
+                ✓
+              </div>
+              <div>
+                <h4 class="fw-bold text-dark-blue mb-1 fs-5">
+                  إدارة سهلة ومباشرة
+                </h4>
+                <p class="text-muted card-text-sm m-0">
+                  يتضمن المشروع فترة دعم فني مدمجة ومجانية بعد الإطلاق للتأكد من
+                  استقرار الموقع وعمله بكفاءة، مع إمكانية طلب باقات صيانة دورية
+                  أو تحديثات متقدمة مستقبلاً برسوم إضافية مرنة حسب احتياجك.
+                </p>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="d-flex gap-3 mb-4">
+              <div
+                class="badge-icon bg-blue-subtle text-primary-blue rounded-circle flex-shrink-0 d-flex align-items-center justify-content-center fw-bold"
+              >
+                ✓
+              </div>
+              <div>
+                <h4 class="fw-bold text-dark-blue mb-1 fs-5">
+                  التركيز على أدق التفاصيل
+                </h4>
+                <p class="text-muted card-text-sm m-0">
+                  الفارق بين الموقع العادي والموقع الاحترافي يكمن في التفاصيل
+                  الصغيرة. لذلك، أحرص على مراجعة واختبار كل زاوية، وأيقونة،
+                  وصفحة في موقعك قبل التسليم، للتأكد من توافقه التام مع الهوية
+                  البصرية لشركتك وظهوره بشكل متناسق ومبهر.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="bg-light p-5 rounded-4 text-center border">
+              <h3 class="fw-bold text-dark-blue mb-3 fs-3">
+                هل تريد البدء بمشروعك الجديد؟
+              </h3>
+              <p
+                class="text-muted card-text-sm mx-auto mb-4 lh-lg"
+                style="max-width: 380px"
+              >
+                تواصل معي الآن عبر الواتساب لمناقشة التفاصيل وتحديد خطة العمل
+                المناسبة لموقعك مجاناً وبأعلى درجات الاحترافية.
+              </p>
+              <a
+                href="https://wa.me/201117852122"
+                target="_blank"
+                class="btn btn-emerald btn-lg w-100 py-3 fw-bold rounded-3 shadow"
+                >ابدأ نقاش مشروعك الآن (واتساب)</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. الفوتر (Footer) -->
+    <footer
+      class="bg-dark-blue text-secondary-dark py-5 border-top border-secondary"
+    >
+      <div
+        class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-4 text-center text-sm-start"
+      >
+        <div class="text-white fw-bold fs-4">
+          يُوسُف<span class="text-emerald">.</span>
+        </div>
+        <p class="text-xs text-white m-0">
+          &copy; جميع الحقوق محفوظة - يوسف ماهر .
+        </p>
+        <div class="d-flex gap-4 fs-6 justify-content-center">
+          <a
+            href="mailto:yousefmaher.dev@gmail.com"
+            target="_blank"
+            class="text-secondary-dark text-decoration-none hover-white"
+            >Yousefmaher.dev@gmail.com</a
+          >
+          <a
+            href="https://eg.linkedin.com/in/yousef-maher-81771b191"
+            target="_blank"
+            class="text-secondary-dark text-decoration-none hover-white"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ملف الـ JS الخارجي -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
