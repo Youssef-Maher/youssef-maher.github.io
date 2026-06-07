@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الأسعار والخطط - يوسف ماهر</title>
+
+    <!-- Bootstrap 5 CSS (RTL) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ملف الـ CSS الخاص بنا -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 1. قائمة التنقل (Navbar) -->
+    <nav
+      class="navbar navbar-expand-lg sticky-top bg-white border-bottom custom-navbar"
+    >
+      <div class="container py-2">
+        <a class="navbar-brand fw-black text-dark-blue fs-3" href="/"
+          >يُوسُف<span class="text-emerald">.</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium gap-3">
+            <li class="nav-item">
+              <a class="nav-link text-secondary-dark hover-blue" href="/"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-dark hover-blue"
+                href="/#services"
+                >الخدمات</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-secondary-dark hover-blue"
+                href="portfolio.html"
+                >معرض الأعمال</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary-blue fw-bold" href="price.html"
+                >الأسعار</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-secondary-dark hover-blue" href="/#why-me"
+                >لماذا أنا؟</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a
+              href="https://wa.me/201117852122"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-emerald rounded-pill px-4 py-2 fw-bold shadow-sm d-flex align-items-center gap-2"
+            >
+              <span>تواصل واتساب</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 2. عنوان الصفحة الرئيسي (Header) -->
+    <section class="py-5 bg-light text-center">
+      <div class="container py-4">
+        <span
+          class="badge bg-emerald-subtle text-emerald px-3 py-2 rounded-pill fw-semibold mb-3"
+        >
+          خطط أسعار مرنة وشفافة
+        </span>
+        <h1 class="fw-black text-dark-blue mb-3 fs-1">
+          استثمر في منصة رقمية تنمي أعمالك
+        </h1>
+        <p class="text-muted mx-auto fs-5" style="max-width: 600px">
+          اختر الباقة المناسبة لمتطلباتك ، أو تواصل معي للحصول على تسعير مخصص
+          لمشروعك.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. كروت الأسعار (Pricing Cards) -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <!-- الباقة الأولى: صفحات الهبوط والمواقع التعريفية -->
+          <div class="col-md-6 col-lg-5">
+            <div
+              class="card h-100 border p-4 rounded-4 shadow-sm custom-price-card"
+            >
+              <div class="mb-4">
+                <h3 class="fw-bold text-dark-blue mb-2 fs-4">المدونات</h3>
+                <p class="text-muted card-text-sm">
+                  مصممة للمدونين، صناع المحتوى، والشركات التي تبحث عن أداء متقدم
+                  ومساحات تدوين وتصنيفات غير محدودة.
+                </p>
+                <div class="d-flex align-items-baseline gap-2 my-3">
+                  <span class="fs-1 fw-black text-primary-blue">1000 ريال</span>
+                  <span class="text-muted card-text-sm"
+                    >غير شامل الدومين والاستضافة</span
+                  >
+                </div>
+                <span
+                  class="badge bg-light-blue text-dark-blue rounded-pill px-3 py-1 fw-semibold card-text-sm"
+                  >توفير 20% بمناسبة العيد</span
+                >
+              </div>
+              <hr class="text-muted" />
+              <ul
+                class="list-unstyled d-flex flex-column gap-3 my-4 flex-grow-1"
+              >
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span>نظام تدوين مع تقسيم الأقسام والوسوم وعناوين مخصصة</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span
+                    >تضمين نظام نشرة بريدية متكامل يتيح لزوار مدونتك الاشتراك
+                    ببريدهم الإلكتروني، مما يساعدك على الاحتفاظ بجمهورك وزيادة
+                    الزيارات المستمرة لمقالاتك.</span
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span>تصميم متجاوب بالكامل مع الجوال والأجهزة اللوحية</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span>لوحة تحكم WordPress سهلة لإدارة المحتوى</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span>ربط وحسابات التواصل الاجتماعي</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span>فيديو مسجل مخصص لشرح إدارة الموقع</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span>
+                    تقديم فترة دعم فني واستشارات مجانية وموسعة لمدة 7 أيام بعد
+                    إطلاق موقع</span
+                  >
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/201117852122?text=أريد+طلب+باقة+المدونات"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-outline-primary w-100 py-3 fw-bold rounded-3"
+                >ابدأ مشروعك الآن</a
+              >
+            </div>
+          </div>
+
+          <!-- الباقة الثانية: المدونات والمنصات المتقدمة (مميزة) -->
+          <div class="col-md-6 col-lg-5">
+            <div
+              class="card h-100 border border-2 border-primary-blue p-4 rounded-4 shadow position-relative custom-price-card"
+            >
+              <div class="mb-4 mt-2">
+                <h3 class="fw-bold text-dark-blue mb-2 fs-4">باقة الشركات</h3>
+                <p class="text-muted card-text-sm">
+                  الحل المثالي للمنشآت والشركات التي تبحث عن حضور رقمي يعزز
+                  الموثوقية ويبرز الخدمات والشركاء بشكل رسمي.
+                </p>
+                <div class="d-flex align-items-baseline gap-2 my-3">
+                  <span class="fs-1 fw-black text-primary-blue">1500 ريال</span>
+                  <span class="text-muted card-text-sm"
+                    >غير شامل الدومين والاستضافة</span
+                  >
+                </div>
+                <span
+                  class="badge bg-light-blue text-dark-blue rounded-pill px-3 py-1 fw-semibold card-text-sm"
+                  >توفير 20% بمناسبة العيد</span
+                >
+              </div>
+              <hr class="text-muted" />
+              <ul
+                class="list-unstyled d-flex flex-column gap-3 my-4 flex-grow-1"
+              >
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span class="fw-bold"
+                    >بناء هيكلية موقع متكاملة تعكس الهوية المؤسسية للمنشأة وتزيد
+                    من موثوقيتها الرقمية.</span
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span class="fw-bold"
+                    >تصميم متجاوب بالكامل مع الجوال والأجهزة اللوحية</span
+                  >
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span>لوحة تحكم WordPress سهلة لإدارة المحتوى</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span> فيديو مسجل مخصص لشرح إدارة الموقع</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span>ربط نظام النشرات البريدية ونماذج اتصال متطورة</span>
+                </li>
+                <li class="d-flex align-items-center gap-2 card-text-sm">
+                  <i class="bi bi-check-circle-fill text-emerald"></i>
+                  <span
+                    >تقديم فترة دعم فني واستشارات مجانية وموسعة لمدة 7 أيام بعد
+                    إطلاق موقع</span
+                  >
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/201117852122?text=أريد+طلب+باقة+الشركات"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary-blue w-100 py-3 fw-bold rounded-3 shadow-sm"
+                >اطلب الباقة المميزة</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. قسم الأسئلة الشائعة حول الدفع والتعاقد (FAQ) -->
+    <section class="py-5 bg-white">
+      <div class="container py-4">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px">
+          <h2 class="fw-black text-dark-blue fs-2">
+            أسئلة شائعة حول الأسعار والعمل
+          </h2>
+          <p class="text-muted card-text-sm">
+            إجابات واضحة ومباشرة لأبرز الاستفسارات المتكررة حول آلية الدفع
+            والتنفيذ.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div
+              class="accordion accordion-flush border rounded-4 overflow-hidden shadow-sm"
+              id="pricingFAQ"
+            >
+              <!-- سؤال 2 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold text-dark-blue py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    هل تشمل هذه الأسعار حجز الدومين والاستضافة؟
+                  </button>
+                </h3>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#pricingFAQ"
+                >
+                  <div class="accordion-body text-muted lh-lg card-text-sm">
+                    الأسعار المذكورة تغطي تكلفة التطوير، البرمجة، والتصميم فقط.
+                    تكاليف حجز اسم النطاق (Domain) ومساحة الاستضافة (Hosting)
+                    تكون على عاتق العميل، لكنني سأقوم بمساعدتك مجاناً في اختيار
+                    أفضل الشركات العالمية وإتمام عملية الشراء والربط مع الموقع
+                    بأقل تكلفة ممكنة.
+                  </div>
+                </div>
+              </div>
+
+              <!-- سؤال 3 -->
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold text-dark-blue py-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    ماذا لو كان مشروعي يتطلب ميزات خاصة خارج هذه الباقات؟
+                  </button>
+                </h3>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#pricingFAQ"
+                >
+                  <div class="accordion-body text-muted lh-lg card-text-sm">
+                    إذا كان لديك مشروع ذو متطلبات برمجية خاصة، أو منصة بمواصفات
+                    معينة لا تشملها الباقات، يسعدني جداً أن نتواصل سوياً عبر
+                    الواتساب لشرح فكرتك بالكامل، وسأقوم بدراستها لتقديم عرض سعر
+                    مخصص (Custom Quote) يناسب ميزانيتك وحجم العمل بدقة.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. الفوتر (Footer) -->
+    <footer
+      class="bg-dark-blue text-secondary-dark py-5 border-top border-secondary"
+    >
+      <div
+        class="container d-flex flex-column flex-sm-row align-items-center justify-content-between gap-4 text-center text-sm-start"
+      >
+        <div class="text-white fw-bold fs-4">
+          يُوسُف<span class="text-emerald">.</span>
+        </div>
+        <p class="text-xs text-white m-0">
+          &copy; جميع الحقوق محفوظة - يوسف ماهر.
+        </p>
+        <div class="d-flex gap-4 fs-6 justify-content-center">
+          <a
+            href="mailto:yousefmaher.dev@gmail.com"
+            class="text-secondary-dark text-decoration-none hover-white"
+            >Yousefmaher.dev@gmail.com</a
+          >
+          <a
+            href="https://eg.linkedin.com/in/yousef-maher-81771b191"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-secondary-dark text-decoration-none hover-white"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ملف الـ JS الخارجي -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

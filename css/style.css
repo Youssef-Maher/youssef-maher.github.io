@@ -270,3 +270,154 @@ image {
 .text-xs {
   font-size: 0.8rem !important;
 }
+
+/* ==========================================================================
+   صفحة الأسعار - التنسيقات الأساسية والمتجاوبة
+   ========================================================================== */
+
+/* الحاوية الرئيسية لقسم الأسعار */
+.pricing-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* عنوان الصفحة والوصف */
+.pricing-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.pricing-header p {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+/* حاوية الكروت (توزيع مرن ومتجاوب) */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* التنسيق الأساسي للكارت */
+.price-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 35px 25px;
+  width: 320px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+/* تأثير حركة الكارت عند مرور الماوس */
+.price-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------------------------------------------------------------
+   تمييز باقة الشركات (Featured Card)
+   -------------------------------------------------------------------------- */
+.price-card.featured {
+  border: 2px solid #007bff; /* يمكنك استبداله بلون موقعك الأساسي */
+}
+
+/* الشارة العلوية (الأكثر طلباً) */
+.price-card.featured .badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007bff; /* يمكنك استبداله بلون موقعك الأساسي */
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   العناصر الداخلية للكارت (العنوان، السعر، المميزات)
+   -------------------------------------------------------------------------- */
+.price-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.price-card .price {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.price-card .price span {
+  font-size: 1rem;
+  color: #777;
+  font-weight: normal;
+}
+
+/* قائمة المميزات */
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 35px 0;
+  text-align: right;
+  flex-grow: 1; /* لضمان تساوي ارتفاع أزرار الكروت تلقائياً */
+}
+
+.price-card ul li {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.95rem;
+  color: #555;
+  position: relative;
+  padding-right: 25px;
+}
+
+/* علامة الصح الخضراء (✓) قبل كل ميزة */
+.price-card ul li::before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  color: #28a745; /* لون العلامة الأخضر */
+  font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------
+   أزرار طلب الباقات (Buttons)
+   -------------------------------------------------------------------------- */
+.price-card .btn-select {
+  display: block;
+  background: #333;
+  color: #fff;
+  padding: 14px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.price-card .btn-select:hover {
+  background: #111;
+}
+
+/* زر باقة الشركات المميزة */
+.price-card.featured .btn-select {
+  background: #007bff; /* يمكنك استبداله بلون موقعك الأساسي */
+}
+
+.price-card.featured .btn-select:hover {
+  background: #0056b3;
+}
